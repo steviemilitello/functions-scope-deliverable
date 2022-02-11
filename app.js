@@ -14,7 +14,7 @@
 const checkPalindrome = (word) => {
     let firstWord = word.toLowerCase().split("")
     let reverseWord = firstWord.reverse().join("")
-    if (word.toLowerCase () === reverseWord) {
+    if (word.toLowerCase () === reverseWord){
         console.log("palidrome")
     }
     else {
@@ -28,13 +28,13 @@ checkPalindrome("Radar")
 
 const sumDigits = (num) => {
     return num.toString().split("")
-} 
+}
+
+console.log(sumDigits(42))
 
 // PYTHAGORAS 
 
-// console.log(sumDigits(42))
-
-const calculateSide = (sideA, sideB) => {
+const calculateSide = (sideA, sideB => {
     return Math.sqrt(Math.pow(sideA, 2) + Math.pow(sideB, 2))
 }
 
@@ -43,13 +43,24 @@ console.log(calculateSide(8, 6));
 // SUM ARRAY 
 
 const sumArray = (array) => {
+    let sum = 0
     for (let i=0; i < array.length; i++) {
-    sum = array[i]
+        sum = sum + Number(array[i])
     }
-    return sum
 }
 
 console.log(sumArray([1, 2, 3, 4, 5, 6]));
 
+// PRIME NUMBERS 
 
+const checkPrime = (num) => {
+    for (let = 0; i * i) = num; i++)
+    if num === primeNumber {
+        console.log("Prime!")
+    }  
+    else {
+        console.log("Not Prime!")
+    }
+}
 
+checkPrime("5")
