@@ -32,13 +32,24 @@ const sumDigits = (num) => {
 
 // PYTHAGORAS 
 
-console.log(sumDigits(42))
+// console.log(sumDigits(42))
 
 const calculateSide = (sideA, sideB) => {
     return Math.sqrt(Math.pow(sideA, 2) + Math.pow(sideB, 2))
 }
 
 console.log(calculateSide(8, 6));
+
+// SUM ARRAY 
+
+const sumArray = (array) => {
+    for (let i=0; i < array.length; i++) {
+    sum = array[i]
+    }
+    return sum
+}
+
+console.log(sumArray([1, 2, 3, 4, 5, 6]));
 
 
 
