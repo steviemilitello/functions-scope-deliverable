@@ -23,3 +23,15 @@ const checkPalindrome = (word) => {
 }
 
 checkPalindrome("Radar")
+
+// DIGIT SUM 
+
+const sumDigits = (num) => {
+    return num.toString().split("")
+} 
+
+console.log(sumDigits(42))
+
+
+
+
