@@ -84,14 +84,32 @@ console.log(sumArray([1, 2, 3, 4, 5, 6]));
         // For example, if you invoke your function with `printPrimes(97)`, it will print all the Prime numbers up to and including 97.
         // This function can **call on** the previous `checkPrime` function.
 
+        // prime number is only divisible by 1 and itself
+        // so an array of a non-prime's divisors would have a length of at least 3
+
+// write a function called checkPrime that will test whether a number is a prime
+
 const checkPrime = (num) => {
-    for (let = 0; i * i) = num; i++)
-    if num === primeNumber {
-        console.log("Prime!")
-    }  
-    else {
-        console.log("Not Prime!")
+ for(let i = 2; i < num; i++) {
+    if (num % i === 0) {
+        return false
+    } else 
+        return true
     }
 }
 
-checkPrime("5")
+console.log(checkPrime("5"))
+
+// write a function called printPrimes that will console log all the primes up to an arbitary limit
+
+const printPrimes = (num) => {
+    for(let i = 2; i < num; i++)
+    if(checkPrime[i] === true) {
+        return true
+    } else 
+        return false
+}
+
+// invoking this will print prime numbers up to and including 97
+// can call on the previous checkPrime function
+console.log(printPrimes(97))
